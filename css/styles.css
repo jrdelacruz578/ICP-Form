@@ -1,0 +1,218 @@
+
+.icp-form {
+    margin: 40px;
+}
+
+.icp-form h3, .icp-form h2 {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+.icp-form h3 {
+    font-size: 20px;
+}
+.icp-form .form-section {
+    padding: 30px 0;
+    border-bottom: solid 1px #ccc;
+}
+
+.icp-form .field-description {
+    color: #595959;
+    line-height: 22px;
+    padding-right: 40px;
+}
+
+.help-block{
+    color: #757575;
+}
+
+.pr-5 {
+    padding-right: 51px;
+}
+
+.text-bold {
+    font-weight: bold !important;
+}
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.25rem; /* 4px */ }
+.mb-2 { margin-bottom: 0.5rem;  /* 8px */ }
+.mb-3 { margin-bottom: 1rem;   /* 16px */ }
+.mb-4 { margin-bottom: 1.5rem; /* 24px */ }
+.mb-5 { margin-bottom: 3rem;   /* 48px */ }
+
+.mt--3 {
+    margin-top: -3px;
+}
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 0.25rem; /* 4px */ }
+.mt-2 { margin-top: 0.5rem;  /* 8px */ }
+.mt-3 { margin-top: 1rem;   /* 16px */ }
+.mt-4 { margin-top: 1.5rem; /* 24px */ }
+.mt-5 { margin-top: 3rem;   /* 48px */ }
+
+
+/* ----------------------- CHECKBOX ----------------------------*/
+
+.icp-form label {
+    font-weight: 400;
+}
+.icp-form input[type="radio"] {
+    display: none;
+}
+.icp-form .radio-group {
+    display: flex;
+    gap: 15px;
+}
+.icp-form .radio-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.icp-form .custom-radio {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #BFBFBF;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+.icp-form input[type="radio"]:checked + .custom-radio {
+    background-color: #009C5C; 
+    border: none;
+}
+.icp-form input[type="radio"]:checked + .custom-radio {
+    background-image: url("../img/white-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icp-form .radio-label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.problems-icon {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    margin-right: 3px;
+}
+.recommendations-icon {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+}
+
+.evaluation-icon {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+}
+.goals-icon {
+    margin-top: -7px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+/*--------------------- DELETABLE FIELDS -------------------------*/
+
+.icp-form .form-container {
+    display: flex;
+    width: 100%;
+}
+.icp-form .form-container .form-control {
+    flex-grow: 1; 
+}
+.icp-form .form-container .btn {
+    margin-left: 10px; 
+    white-space: nowrap; 
+}
+
+/*---- Add New : BTN ----*/
+.icp-form .btn-outline-green {
+    border: 2px solid #00A160;
+    color: #00A160;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 8px 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, color 0.3s;
+}
+.icp-form .btn-outline-green:hover {
+    background: #00A160;
+    color: #fff;
+}
+.icp-form .btn-outline-green:focus,
+.icp-form .btn-outline-green:active,
+.icp-form .btn-outline-green:visited {
+    border: 2px solid #00A160 !important;
+    color: #00A160 !important;
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.icp-form .btn-outline-green:active:hover,
+.icp-form .btn-outline-green:focus:hover {
+    background: #00A160 !important;
+    color: #fff !important;
+}
+.icp-form .btn-outline-green img {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(94%) saturate(698%) hue-rotate(103deg) brightness(90%) contrast(95%);
+}
+.icp-form .btn-outline-green:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+.icp-form .btn-outline-green:active:hover img,
+.icp-form .btn-outline-green:focus:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
+}
+
+
+/*---- Delete : BTN ----*/
+.icp-form .delete-btn {
+    background: #F1F2F1 url("../img/delete-icon.svg") no-repeat center center;
+    background-size:21px;
+    text-indent: -9999999px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.icp-form .delete-btn:hover,
+.icp-form .delete-btn:focus,
+.icp-form .delete-btn:active,
+.icp-form .delete-btn:visited {
+    background: #F1F2F1 url("../img/delete-icon.svg") no-repeat center center !important;
+    background-size: 21px !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/*------------ GOALS BLOCK ---------------*/
+
+.icp-form .goal-block {
+    background: #FAFBFC;
+    padding: 20px;
+    border: solid 1px #CED8DE;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.icp-form .goal-block label {
+    font-weight: 600;
+}
+
+/* ----------------------- HELPERS ----------------------------*/
+
+.d1 { background-color: #FFDDC1; } 
+.d2 { background-color: #FFCCCC; } 
+.d3 { background-color: #D4A5A5; } 
+.d4 { background-color: #C1E1C1; } 
+.d5 { background-color: #C1EFFF; } 
+.d6 { background-color: #E0BBE4; } 
+.d7 { background-color: #FCE1E4; } 
+.d8 { background-color: #FFFACD; } 
