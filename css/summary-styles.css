@@ -9,6 +9,16 @@
 
 }
 
+.summary-card .recommendations-icon {
+    width: 60px;
+    left: 35px;
+}
+
+.summary-card .goals-icon {
+    width: 60px;
+    left: 35px;
+}
+
 .summary-card.goals{
     color: red;
 }
@@ -16,6 +26,7 @@
 .edit-btn {
     position: absolute;
     right: 20px;
+    top: 20px;
     background: #F1F2F1 url("../img/edit-icon.svg") no-repeat center center;
     background-size: 23px;
     border: none;
@@ -30,3 +41,33 @@
     left: 20px;
     top: 20px;
 }
+
+.summary-goals {
+    padding: 36px 20px 20px 20px;
+    padding-left: 20px;
+    
+}
+
+.summary-goals .content-panel{
+    padding-left: 110px;
+    margin-bottom: 30pxs;
+}
+
+.summary-goals .table {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 25px;
+}
+
+.summary-goals .table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+}
+
+td:not(:first-child), th:not(:first-child) {
+    border-left: 1px solid #ddd;
+  }
+
+  .list-group li{
+    margin-bottom: 10px;
+  }

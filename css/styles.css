@@ -206,6 +206,12 @@
     font-weight: 600;
 }
 
+
+.alert-danger  {
+    font-size: 17px !important;
+}
+
+
 /* ----------------------- HELPERS ----------------------------*/
 
 .d1 { background-color: #FFDDC1; } 
