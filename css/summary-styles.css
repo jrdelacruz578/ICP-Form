@@ -1,0 +1,32 @@
+.summary-card {
+    background: #FAFBFC;
+    border: solid 1px #CED8DE;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 130px;
+    padding-right: 60px;
+    position: relative;
+
+}
+
+.summary-card.goals{
+    color: red;
+}
+
+.edit-btn {
+    position: absolute;
+    right: 20px;
+    background: #F1F2F1 url("../img/edit-icon.svg") no-repeat center center;
+    background-size: 23px;
+    border: none;
+    width: 37px;
+    height: 37px;
+    border-radius: 5px;
+}
+
+.summary-card img {
+    width: 80px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}

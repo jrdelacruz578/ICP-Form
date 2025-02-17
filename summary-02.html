@@ -10,16 +10,62 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/summary-styles.css">
 </head>
 <body>
 
 
     <!-- Contenido principal -->
 
-    <div class="icp-form"> 
+    <div class="icp-form">
+
+   
     <div class="container">
+        <h2 class="mb-">Resumen</h2>
+        <div class="summary-card mt-3 panel">
+            <img src="img/problems-icon.svg" class="problems-icon">
+            <button class="edit-btn"></button>
+            <h3 class="mb-3">Problemas</h3>
+            <p>Aspectos que necesitas mantener o alcanzar para mejorar tu salud, bienestar y calidad de vida según tus diagnósticos, condiciones médicas y circunstancias personales.</p>
+            <ol>
+                <li>El paciente tiene sobrepeso.</li>
+            </ol>
+        </div>
+        <div class="summary-card mt-3 panel">
+            <img src="img/initiatives-icons.svg" class="recommendations-icon" alt="">
+            <button class="edit-btn"></button>
+            <h3 class="mb-3">Iniciativas</h3>
+            <p>Acciones o intervenciones para alcanzar los resultados deseados para tu salud y bienestar.</p>
+            <ol>
+                <li>Promueve una dieta equilibrada y actividad física regular.</li>
+            </ol>
+        </div>
+        <div class="summary-card mt-3 panel">
+            <img src="img/recommendations-icon.svg" class="recommendations-icon" alt="">
+            <button class="edit-btn"></button>
+            <h3 class="mb-3">Problemas</h3>
+            <p>Aspectos que necesitas mantener o alcanzar para mejorar tu salud, bienestar y calidad de vida según tus diagnósticos, condiciones médicas y circunstancias personales.</p>
+            <ol>
+                <li>El paciente tiene sobrepeso.</li>
+            </ol>
+        </div>
+
+        <div class="summary-card mt-3 panel">
+            <img src="img/goals.svg" class="goals-icon">
+            <button class="edit-btn"></button>
+            <h3 class="mb-3">Problemas</h3>
+            <p>Aspectos que necesitas mantener o alcanzar para mejorar tu salud, bienestar y calidad de vida según tus diagnósticos, condiciones médicas y circunstancias personales.</p>
+            <ol>
+                <li>El paciente tiene sobrepeso.</li>
+            </ol>
+        </div>
+
+        
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
         <h2 class="mb-3">Plan de Cuidado Individual</h2>
+        <i>Todos los campos son requeridos</i>
 
         <div class="form-section">
             <div class="row">
@@ -234,14 +280,14 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="field-description">
-                        <p>Fecha estimada de tu próxima evaluación de riesgos de salud (CHRA) con tu médico primario.</p>
+                        <p>Próxima evaluación de riesgos de salud (CHRA) con tu medico primario: (especificar la fecha de su próximo CHRA).</p>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="fecha" class="text-bold">Fecha estimada</label>
+                                <label for="fecha" class="text-bold">Fecha de su próximo CHRA</label>
                                 <div class="input-group">
                                     <input type="date" class="form-control" id="fecha" value="2025-02-06" disabled>
                                     <span class="input-group-addon">
@@ -258,16 +304,40 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="field-description">
-                        <p>Fecha estimada de la actualización de tu Plan de Cuidado y progreso de tus metas de salud.</p>
+                        <p>Actualización de tu Plan de Cuidado y progreso de tus metas de salud: (especificar la fecha de envío de su ICP actualizado).</p>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="fecha" class="text-bold">Fecha estimada</label>
+                                <label for="fecha" class="text-bold">Fecha de envío de su ICP actualizado</label>
                                 <div class="input-group">
                                     <input type="date" class="form-control" id="fecha" value="2025-01-02" disabled>
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="field-description">
+                        <p>Fecha estimada de su próxima cita de reevaluación médica.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fecha" class="text-bold">Fecha de la próxima reunión con el miembro</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" id="fecha" value="" >
                                     <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
