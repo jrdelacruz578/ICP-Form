@@ -17,14 +17,58 @@
 
     <!-- Contenido principal -->
 
-    <div class="icp-form">
 
+    <div class="icp-form">
    
     <div class="container">
-        <h2 class="mb-">Resumen</h2>
+        <a href="#" class="go-back-link">Volver atrás</a>
+
+        <h2>Plan de Cuidado de Salud y Bienestar Individualizado</h2>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h3 class="mb-3">Fecha del Plan:</h3>
+            </div>
+            <div class="col-md-8 ">
+                <div class="simple-date">02/06/2025</div>  
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-5">
+            <div class="col-md-4">
+                <h3 class="mb-3-important">Método de Entrega</h3>
+            </div>
+            <div class="col-md-8 ">
+                <div class="radio-group">
+                    <!-- Radio 1 -->
+                    <label class="radio-container">
+                        <input type="radio" name="opcion">
+                        <span class="custom-radio"></span>
+                        <span class="radio-label">Correo</span>
+                    </label>
+        
+                    <!-- Radio 2 (Marcado por defecto) -->
+                    <label class="radio-container">
+                        <input type="radio" name="opcion" checked>
+                        <span class="custom-radio"></span>
+                        <span class="radio-label">Impreso</span>
+                    </label>
+        
+                    <!-- Radio 3 -->
+                    <label class="radio-container">
+                        <input type="radio" name="opcion">
+                        <span class="custom-radio"></span>
+                        <span class="radio-label">Correo electrónico</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+
+        <h2 class="mt">Resumen</h2>
         <div class="summary-card mt-3 panel">
             <img src="img/problems-icon.svg" class="problems-icon">
-            <button class="edit-btn"></button>
+            <button class="edit-btn" data-toggle="modal" data-target="#problems-modal"></button>
             <h3 class="mb-3">Problemas</h3>
             <p>Aspectos que necesitas mantener o alcanzar para mejorar tu salud, bienestar y calidad de vida según tus diagnósticos, condiciones médicas y circunstancias personales.</p>
             <ol>
@@ -33,26 +77,25 @@
         </div>
         <div class="summary-card mt-3 panel">
             <img src="img/initiatives-icons.svg" class="recommendations-icon" alt="">
-            <button class="edit-btn"></button>
+            <button class="edit-btn" data-toggle="modal" data-target="#initiatives-modal"></button>
             <h3 class="mb-3">Iniciativas</h3>
             <p>Acciones o intervenciones para alcanzar los resultados deseados para tu salud y bienestar.</p>
             <ol>
-                <li>Promueve una dieta equilibrada y actividad física regular.</li>
+                <li>El paciente tiene sobrepeso.</li>
             </ol>
         </div>
         <div class="summary-card panel">
             <img src="img/recommendations-icon.svg" class="recommendations-icon" alt="">
-            <button class="edit-btn"></button>
+            <button class="edit-btn" data-toggle="modal" data-target="#recommendations-modal"></button>
             <h3 class="mb-3">Recomendaciones</h3>
             <p>Sugerencias que promueven tu recuperación, manejo de tus condiciones o el mantenimiento de tu salud y bienestar.</p>
             <ol>
-                <li>Daily 20-minute walk and gradually increase fruit portions.  </li>
+                <li>Camina 20 minutos al día y aumenta gradualmente las porciones...</li>
             </ol>
         </div>
 
         <div class="summary-card summary-goals panel">
             <img src="img/goals.svg" class="goals-icon">
-            <button class="edit-btn"></button>
             <div class="content-panel">
                 <h3 class="mb-3">Metas</h3>
                 <p>Resultados esperados en un tiempo específico que son apoyados por las iniciativas y recomendaciones ofrecidas en este plan.</p>
@@ -86,24 +129,239 @@
             </table>
         </div>
         
-        <h2 class="mt-5">Seguimiento y Evaluación</h2>
+        <h2 class="mt-30 ">
+            <img src="img/calendar.svg" class="recommendations-icon" alt="">
+            Seguimiento y Evaluación
+        </h2>
 
 
-        <ul class="list-group mt-4">
-            <li class="list-group-item"><strong>02/06/2026</strong> - Fecha de su próximo CHRA: Evaluación de riesgos de salud con su médico primario.</li>
-            <li class="list-group-item"><strong>01/02/2026</strong> - Fecha de envío de su ICP actualizado: Revisión del Plan de Cuidado.</li>
-            <li class="list-group-item"><strong>12/31/2026</strong> - Fecha de su próxima reunión con el miembro: Reevaluación médica.</li>
+        <ul class="evaluation-tracking">
+            <li>
+                <div class="evaluation-date">
+                    <p>02/06/2026</p>
+                </div>
+                <div class="evaluation-description">
+                    <p>Este es un contenido más largo que hará que el div crezca en altura.</p>
+                </div>
+            </li>
+    
+            <li>
+                <div class="evaluation-date">
+                    <p>01/02/2026</p>
+                </div>
+                <div class="evaluation-description">
+                    <p>Este es otro contenido más largo que hará que el div crezca en altura.</p>
+                </div>
+            </li>
         </ul>
 
-
-
+    
+        <div class="row mt-5">
+            <div class="col-xs-4">
+                <div class="mb-5">
+                    <strong> Nombre del Médico</strong> 
+                    <br/>
+                    Federico Martínez
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="mb-5">
+                    <strong> Firmado Electrónicamente Por:</strong>
+                    <br/>
+                    Federico Martínez, MD
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="mb-5">
+                    <strong>Firma del Afiliado</strong>
+                    <br/>
+                    Signature on file
+                </div>
+            </div>
+        </div>
+  
 
 
     </div><!-- ./container -->
      </div><!-- ./icp-form -->
+
+
+      
       </div>
 
     </div>
+
+
+
+     <!-- ///////////////////////////////////////////////////// MODALS ///////////////////////////////////////////////////// -->
+
+     <div class="modal fade" id="problems-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="exampleModalLabel">Problemas</h4>
+            </div>
+            <div class="modal-body">
+              <p class="mb-4">Aspectos que necesitas mantener o alcanzar para mejorar tu salud, bienestar y calidad de vida según tus diagnósticos, condiciones médicas y circunstancias personales.
+              </p>
+              <form class="icp-form">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <form class="form-inline mb-1">
+                              <div class="form-container">
+                                  <input type="text" class="form-control">
+                                  <button type="submit" class="btn btn-default delete-btn">Enviar</button> 
+                              </div>
+                              <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                          </form>
+                   
+                          <form class="form-inline mb-1 mt-4">
+                              <div class="form-container">
+                                  <input type="text" class="form-control">
+                                  <button type="submit" class="btn btn-default delete-btn">Enviar</button> 
+                              </div>
+                              <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                          </form>
+          
+                          <form class="form-inline mb-1 mt-4">
+                              <div class="form-container">
+                                  <input type="text" class="form-control">
+                                  <button type="submit" class="btn btn-default delete-btn">Enviar</button> 
+                              </div>
+                              <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                          </form>
+                        
+          
+                          <button class="btn btn-outline-green">
+                             <img src="img/add-icon.svg" alt="">Agregar Nuevo
+                          </button>
+                      </div>
+                  </div>
+                  
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- ////////////////// MODAL - Iniciativas /////////////////////// -->
+
+     <div class="modal fade" id="initiatives-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="exampleModalLabel">Iniciativas</h4>
+            </div>
+            <div class="modal-body">
+              <p class="mb-4">Aspectos que necesitas mantener o alcanzar para mejorar tu salud, bienestar y calidad de vida según tus diagnósticos, condiciones médicas y circunstancias personales.
+              </p>
+              <form class="icp-form">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <form class="form-inline mb-1">
+                              <div class="form-container">
+                                  <input type="text" class="form-control">
+                                  <button type="submit" class="btn btn-default delete-btn">Enviar</button> 
+                              </div>
+                              <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                          </form>
+                   
+                          <form class="form-inline mb-1 mt-4">
+                              <div class="form-container">
+                                  <input type="text" class="form-control">
+                                  <button type="submit" class="btn btn-default delete-btn">Enviar</button> 
+                              </div>
+                              <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                          </form>
+          
+                          <form class="form-inline mb-1 mt-4">
+                              <div class="form-container">
+                                  <input type="text" class="form-control">
+                                  <button type="submit" class="btn btn-default delete-btn">Enviar</button> 
+                              </div>
+                              <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                          </form>
+                        
+          
+                          <button class="btn btn-outline-green">
+                             <img src="img/add-icon.svg" alt="">Agregar Nuevo
+                          </button>
+                      </div>
+                  </div>
+                  
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+         <!-- ////////////////// MODAL - Recommendations /////////////////////// -->
+
+     <div class="modal fade" id="recommendations-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="exampleModalLabel">Recomendaciones</h4>
+            </div>
+            <div class="modal-body">
+              <p class="mb-4">Aspectos que necesitas mantener o alcanzar para mejorar tu salud, bienestar y calidad de vida según tus diagnósticos, condiciones médicas y circunstancias personales.
+              </p>
+              <form class="icp-form">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <form class="form-inline mb-1">
+                              <div class="form-container">
+                                  <input type="text" class="form-control">
+                                  <button type="submit" class="btn btn-default delete-btn">Enviar</button> 
+                              </div>
+                              <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                          </form>
+                   
+                          <form class="form-inline mb-1 mt-4">
+                              <div class="form-container">
+                                  <input type="text" class="form-control">
+                                  <button type="submit" class="btn btn-default delete-btn">Enviar</button> 
+                              </div>
+                              <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                          </form>
+          
+                          <form class="form-inline mb-1 mt-4">
+                              <div class="form-container">
+                                  <input type="text" class="form-control">
+                                  <button type="submit" class="btn btn-default delete-btn">Enviar</button> 
+                              </div>
+                              <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                          </form>
+                        
+          
+                          <button class="btn btn-outline-green">
+                             <img src="img/add-icon.svg" alt="">Agregar Nuevo
+                          </button>
+                      </div>
+                  </div>
+                  
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
 
 </body>
 </html>
