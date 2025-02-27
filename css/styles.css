@@ -24,6 +24,14 @@
 
 .help-block{
     color: #757575;
+    text-align: left;
+}
+
+@media (min-width: 420px) {
+    .help-block{
+        color: #757575;
+        text-align: right;
+    }
 }
 
 .pr-5 {
@@ -219,6 +227,18 @@
     font-size: 17px !important;
 }
 
+.is-invalid {
+    background: #FFE4E4;
+    border: solid 1px #ECADAD;
+}
+.require-filed-text {
+    color:#BA2A2A;
+}
+@media (min-width: 420px) {
+    .require-filed-text {
+        float: left;
+    }
+}
 
 /* ----------------------- HELPERS ----------------------------*/
 

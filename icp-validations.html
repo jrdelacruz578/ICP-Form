@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyecto con Bootstrap 3</title>
+    <!-- Bootstrap 3 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+    <!-- Contenido principal -->
+
+    <div class="icp-form"> 
+    <div class="container">
+
+        <h2 class="mb-3">Plan de Cuidado Individual</h2>
+
+        <div class="alert alert-danger mt-4" role="alert">
+            <img src="img/red-alert-icon.svg" class="problems-icon">
+            <span class="sr-only">Error:</span>
+            Enter a valid email address
+          </div>
+
+        <div class="form-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="mb-3">Método de Entrega</h3>
+                </div>
+                <div class="col-md-8 ">
+                    <div class="radio-group">
+                        <!-- Radio 1 -->
+                        <label class="radio-container">
+                            <input type="radio" name="opcion">
+                            <span class="custom-radio"></span>
+                            <span class="radio-label">Correo</span>
+                        </label>
+            
+                        <!-- Radio 2 (Marcado por defecto) -->
+                        <label class="radio-container">
+                            <input type="radio" name="opcion" checked>
+                            <span class="custom-radio"></span>
+                            <span class="radio-label">Impreso</span>
+                        </label>
+            
+                        <!-- Radio 3 -->
+                        <label class="radio-container">
+                            <input type="radio" name="opcion">
+                            <span class="custom-radio"></span>
+                            <span class="radio-label">Correo electrónico</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="mb-3">Fecha del Plan</h3>
+                </div>
+                <div class="col-md-8 ">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="input-group date">
+                                    <input type="date" class="form-control" value="2024-02-06" disabled />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="field-description">
+                        <h3><img src="img/problems-icon.svg" class="problems-icon"> Problemas</h3>
+                        <p> Aspectos que necesitas mantener o alcanzar para mejorar tu salud, bienestar y calidad de vida según tus diagnósticos, condiciones médicas y circunstancias personales.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <form class="form-inline mb-1">
+                        <div class="form-container">
+                            <input type="email" class="form-control is-invalid">
+                            <button type="submit" class="btn btn-default delete-btn">Send</button> 
+                        </div>
+                        <div class="form-text require-filed-text">Campo requerido</div> 
+                        <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                    </form>
+                    <!-- NEW BLOCKS --
+                    <form class="form-inline mb-1 mt-4">
+                        <div class="form-container">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn btn-default delete-btn">Send</button> 
+                        </div>
+                        <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                    </form>
+
+                    <form class="form-inline mb-1 mt-4">
+                        <div class="form-container">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn btn-default delete-btn">Send</button> 
+                        </div>
+                        <p class="help-block text-right mt-0  pr-5 mt--3">Disponibles: 800 caracteres</p>
+                    </form>
+                    <!-- ./ NEW BLOCKS -->
+
+                    <button class="btn btn-outline-green">
+                       <img src="img/add-icon.svg" alt="">Agregar Nuevo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="field-description">
+                        <h3><img src="img/initiatives-icons.svg" class="recommendations-icon" alt=""> Iniciativas</h3>
+                        <p>Acciones o intervenciones para alcanzar los resultados deseados para tu salud y bienestar.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <form class="form-inline mb-1">
+                        <div class="form-container">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn btn-default delete-btn">Send</button> 
+                        </div>
+                        <p class="help-block text-right pr-5 mt--3">Disponibles: 800 caracteres</p>
+                    </form>
+                    <button class="btn btn-outline-green">
+                       <img src="img/add-icon.svg" alt="">Agregar Nuevo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="field-description">
+                        <h3><img src="img/recommendations-icon.svg" class="recommendations-icon" alt=""> Recomendaciones</h3>
+                        <p>Sugerencias que promueven tu recuperación, manejo de tus condiciones o el mantenimiento de tu salud y bienestar.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <form class="form-inline mb-1">
+                        <div class="form-container">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn btn-default delete-btn">Send</button> 
+                        </div>
+                        <p class="help-block text-right pr-5 mt--3">Disponibles: 800 caracteres</p>
+                    </form>
+                    <button class="btn btn-outline-green">
+                       <img src="img/add-icon.svg" alt="">Agregar Nuevo
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="field-description">
+                        <h3><img src="img/goals.svg" class="goals-icon">Metas</h3>
+                        <p>Resultados esperados en un tiempo específico que son apoyados por las iniciativas y recomendaciones ofrecidas en este plan.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="goal-block">
+                        <div class="form-group">
+                            <label for="metas">Metas</label>
+                            <input type="text" class="form-control" id="metas" value="Cuidado de la diabetes - Examen ocular" readonly>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="fecha">Fecha estimada para alcanzarla</label>
+                                    <div class="input-group">
+                                        <input type="date" class="form-control" id="fecha" value="2025-12-31" disabled>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="estatus">Estatus</label>
+                                    <select class="form-control" id="estatus" disabled>
+                                        <option selected>Meta Alcanzada</option>
+                                        <option>selected>Meta No Alcanzada</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goal-block">
+                        <div class="form-group">
+                            <label for="metas">Metas</label>
+                            <input type="text" class="form-control" id="metas" value="Cuidado de la diabetes - Examen ocular" readonly>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="fecha">Fecha estimada para alcanzarla</label>
+                                    <div class="input-group">
+                                        <input type="date" class="form-control" id="fecha" value="2025-12-31" disabled>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="estatus">Estatus</label>
+                                    <select class="form-control" id="estatus" disabled>
+                                        <option selected>Meta Alcanzada</option>
+                                        <option>selected>Meta No Alcanzada</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-section">
+            <h3 class="mb-4"><img src="img/black-calendar.svg" class="evaluation-icon" alt="">Seguimiento y Evaluación</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="field-description">
+                        <p>Fecha estimada de tu próxima evaluación de riesgos de salud (CHRA) con tu médico primario.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fecha" class="text-bold">Fecha estimada</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" id="fecha" value="2025-02-06" disabled>
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="field-description">
+                        <p>Fecha estimada de la actualización de tu Plan de Cuidado y progreso de tus metas de salud.</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fecha" class="text-bold">Fecha estimada</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" id="fecha" value="2025-01-02" disabled>
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="field-description">
+                        <h3>Firmas</h3>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="mb-5">
+                        <strong> Nombre del Médico</strong> 
+                        <br/>
+                        Federico Martínez
+                    </div>
+                    <div class="mb-5">
+                        <strong> Firmado Electrónicamente Por:</strong>
+                        <br/>
+                        Federico Martínez, MD
+                    </div>
+                    <div class="mb-5">
+                        <strong>Firma del Afiliado</strong>
+                        <br/>
+                        Signature on file
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- ./container -->
+     </div><!-- ./icp-form -->
+      </div>
+
+    </div>
+
+</body>
+</html>
