@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea Dinámico y Centrado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 30px; /* Altura inicial */
+            max-height: 200px;
+            overflow-y: hidden;
+            padding: 14px 10px 0px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <textarea id="dynamicTextarea" placeholder="Escribe algo..."></textarea>
+    </div>
+
+    <script>
+        const textarea = document.getElementById("dynamicTextarea");
+
+        textarea.addEventListener("input", function () {
+            if (this.value.trim() === "") {
+                this.style.height = "30px"; // Volver a la altura inicial si está vacío
+            } else {
+                this.style.height = "30px"; // Restablece la altura mínima
+                this.style.height = this.scrollHeight + "px"; // Ajusta según el contenido
+            }
+        });
+    </script>
+
+</body>
+</html>
